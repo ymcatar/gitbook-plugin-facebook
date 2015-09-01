@@ -18,4 +18,6 @@ require(["gitbook", "jquery"], function(gitbook, $) {
         init();
     });
 
+    gitbook.events.bind("page.change", init);
+
 });
