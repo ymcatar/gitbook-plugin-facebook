@@ -1,10 +1,10 @@
 require(["gitbook", "jquery"], function(gitbook, $) {
 
-    var init = function() {
-        if(typeof FB === 'function') // needed because sometimes Facebook sdk is not loaded
-            FB.XFBML.parse();
-    };
+    gitbook.events.bind("page.change", function() {
 
-    gitbook.events.bind("page.change", init);
+        $('fb-comments').data('href', window.location);
+        FB.XFBML.parse();
+
+    });
 
 });
