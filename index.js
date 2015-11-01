@@ -6,7 +6,7 @@ module.exports = {
             "facebook.css"
         ],
         js: [
-            "http://connect.facebook.net/en_US/all.js",
+            "https://connect.facebook.net/en_US/all.js",
             "facebook.js"
         ],
         html: {
