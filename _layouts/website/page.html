@@ -1,0 +1,6 @@
+{% extends template.self %}
+
+{% block body %}
+    <div class="fb_id" data-id="{{ config.pluginsConfig.facebook.appKey }}"></div>
+    {{ super() }}
+{% endblock %}

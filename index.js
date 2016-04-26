@@ -8,13 +8,7 @@ module.exports = {
         js: [
             "https://connect.facebook.net/en_US/all.js",
             "facebook.js"
-        ],
-        html: {
-            "body:start": function() {
-                var appKey = this.options.pluginsConfig.facebook.appKey;
-                return '<div class="fb_id" data-id="' + appKey +'"></div>';
-            }
-        }
+        ]
     },
 
     hooks: {
