@@ -19,7 +19,7 @@ module.exports = {
 
     hooks: {
         "page": function(page) {
-            page.sections[0].content += '<br><div class="fb-comments" data-numposts="5" data-width="100%"></div>';
+            page.content += '<br><div class="fb-comments" data-numposts="5" data-width="100%"></div>';
             return page;
         }
     }
