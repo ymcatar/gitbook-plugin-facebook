@@ -14,5 +14,14 @@
     "license": "GPL-3.0",
     "bugs": {
         "url": "https://github.com/ymcatar/gitbook-plugin-facebook/issues"
+    },
+    "gitbook": {
+        "properties": {
+            "appKey": {
+                "type": "string",
+                "description": "Facebook Application ID",
+                "required": true
+            }
+        }
     }
 }
