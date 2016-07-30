@@ -2,7 +2,7 @@ This is a plugin that allows you to add Facebook comments plugin in your GitBook
 
 ## Changelog
 
-* 2.0.0: updated to latest facebook api.
+* 2.0.0: updated to latest facebook api, now requires gitbook >= 3.0.
 
 ## Usage
 To add Facebook comments into your GitBook, you need to first obtain your personal Application ID from Facebook. To do so, you can follow the guide [here](http://support.heateor.com/how-to-get-facebook-app-id/).
