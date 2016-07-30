@@ -1,6 +1,17 @@
 {% extends template.self %}
 
+{% block head %}
+  <meta property="fb:app_id" content="{{ config.pluginsConfig.facebook.appKey }}"/>
+{% endblock %}
+
 {% block body %}
-    <div class="fb_id" data-id="{{ config.pluginsConfig.facebook.appKey }}"></div>
-    {{ super() }}
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId={{ config.pluginsConfig.facebook.appKey }}";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  {{ super() }}
 {% endblock %}

@@ -1,27 +1,27 @@
 {
-    "name": "gitbook-plugin-facebook",
-    "description": "Facebook comment plugin for GitBook",
-    "main": "index.js",
-    "version": "1.0.0",
-    "engines": {
-        "gitbook": ">=2.x.x"
-    },
-    "homepage": "https://github.com/ymcatar/gitbook-plugin-facebook",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ymcatar/gitbook-plugin-facebook.git"
-    },
-    "license": "GPL-3.0",
-    "bugs": {
-        "url": "https://github.com/ymcatar/gitbook-plugin-facebook/issues"
-    },
-    "gitbook": {
-        "properties": {
-            "appKey": {
-                "type": "string",
-                "description": "Facebook Application ID",
-                "required": true
-            }
-        }
+  "name": "gitbook-plugin-facebook",
+  "description": "Facebook comment plugin for GitBook",
+  "main": "index.js",
+  "version": "2.0.0",
+  "engines": {
+    "gitbook": ">=3.x.x"
+  },
+  "homepage": "https://github.com/ymcatar/gitbook-plugin-facebook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymcatar/gitbook-plugin-facebook.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ymcatar/gitbook-plugin-facebook/issues"
+  },
+  "gitbook": {
+    "properties": {
+      "appKey": {
+        "type": "string",
+        "description": "Facebook Application ID",
+        "required": true
+      }
     }
+  }
 }
